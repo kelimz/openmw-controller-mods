@@ -1,12 +1,19 @@
 # Changes
 
-## Controller Comfort 1.1.4
-- Present remembered Map before the first menu draw, avoiding the temporary Inventory page flash.
-- Remember Map when reopening the controller menu; keep native memory behavior for other pages.
-- Include 1.1.2 map zoom: slower time-based rate with fine stick control, no cursor prerequisite, focus refresh across world/local layers, immediate reversal and no catch-up bursts after stalls.
-- Keep original Morrowind files unchanged and use the existing OpenMW content checkbox.
+## Controller Comfort 1.1.7
+- Keep the cursor visible for repeated controller A clicks on barter price +/-.
+- Includes 1.1.6: keep full D-pad-selected dialogue topics visible, including wrapped labels.
+- Includes 1.1.5: remember Map through the native opening-page pass; remove the earlier delayed page switch that could flash Inventory.
+- Existing time-based map zoom, scroll rollback and deliberate inventory selection fixes remain.
 
-## Quick Menu Names 1.1.1
-- Show X Assign/change slot in the bottom controller bar beside A Use and B Cancel.
+## Indoor Shadow Occlusion 0.2.1-experimental — new public release
+- Keep native indoor actor shadows while filtering projections beyond intervening static surfaces.
+- Supporting-floor planes exclude upper-floor shadows from lower floors, including open balconies.
+- Synchronize blocker projection after OpenMW finalizes the shadow camera; fixes a nearby NPC shadow disappearing with camera movement.
+- Linux x86-64 OpenMW Flatpak 0.51.0 f4bec41444 / OSG ABI 162 only; two shadow maps and outdoor object shadows required.
 
-Most code and documentation are AI-generated with OpenAI Codex. Experimental Linux x86-64 OpenMW 0.51.0 Flatpak builds. GPL-3.0-only. See README for exact compatibility limits and testing scope.
+## Quick Menu Names 1.1.1 — unchanged
+- Names for quick slots and A Use / X Assign / B Cancel controls.
+- Private ABI item-name reader remains restricted to its documented executable build ID.
+
+AI-generated and experimental. Source, build instructions and GPL-3.0-only license included in each ZIP. Limited local validation; see individual README files.
